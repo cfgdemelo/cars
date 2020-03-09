@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Cars</string>
+    <string name="map">Map</string>
+    <string name="favorites">Favorites</string>
+    <string name="model">Model:</string>
+    <string name="brand">Brand:</string>
+</resources>
