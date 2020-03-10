@@ -4,4 +4,7 @@
     <string name="favorites">Favorites</string>
     <string name="model">Model:</string>
     <string name="brand">Brand:</string>
+    <string name="location_error">Unfortunately your location permission is missing</string>
+    <string name="network_error">Unfortunately an network error occurred</string>
+    <string name="distance">%1$s Km</string>
 </resources>

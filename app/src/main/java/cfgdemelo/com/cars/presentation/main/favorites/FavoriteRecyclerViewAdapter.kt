@@ -10,9 +10,9 @@ import cfgdemelo.com.cars.data.model.Car
 
 import kotlinx.android.synthetic.main.favorite_item.view.*
 
-class MyFavoriteRecyclerViewAdapter(
+class FavoriteRecyclerViewAdapter(
     private val values: List<Car>
-) : RecyclerView.Adapter<MyFavoriteRecyclerViewAdapter.ViewHolder>() {
+) : RecyclerView.Adapter<FavoriteRecyclerViewAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)

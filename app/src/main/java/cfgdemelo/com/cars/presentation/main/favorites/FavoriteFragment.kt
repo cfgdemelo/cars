@@ -34,7 +34,7 @@ class FavoriteFragment : Fragment() {
         viewModel.cars.observe(viewLifecycleOwner, Observer {
             list.apply {
                 layoutManager = LinearLayoutManager(context)
-                adapter = MyFavoriteRecyclerViewAdapter(it)
+                adapter = FavoriteRecyclerViewAdapter(it)
             }
         })
 
