@@ -50,10 +50,12 @@ class MainViewModel(private val context: Context, private val repository: MainRe
             Location("My location").apply {
                 latitude = latLng.latitude
                 longitude = latLng.longitude
-                val dist = this.distanceTo(location).roundToInt().div(1000).toString()
-                distance = context.getString(R.string.distance, dist)
+                distance = context.getString(R.string.distance, getDistance(this, location))
             }
             MarkerOptions().position(latLng).title(title).snippet(distance)
         }
 
+    fun getDistance(firstLocation: Location, secondLocation: Location): String {
+        return firstLocation.distanceTo(secondLocation).roundToInt().div(1000).toString()
+    }
 }
